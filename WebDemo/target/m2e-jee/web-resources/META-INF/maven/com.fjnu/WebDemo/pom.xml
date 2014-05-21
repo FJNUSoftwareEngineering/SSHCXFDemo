@@ -108,6 +108,12 @@
     		<artifactId>neethi</artifactId>
     		<version>3.0.2</version>
     		<type>bundle</type>
+    		<exclusions>
+    			<exclusion>
+    				<artifactId>woodstox-core-asl</artifactId>
+    				<groupId>org.codehaus.woodstox</groupId>
+    			</exclusion>
+    		</exclusions>
     	</dependency>
     	<dependency>
     		<groupId>org.codehaus.woodstox</groupId>
