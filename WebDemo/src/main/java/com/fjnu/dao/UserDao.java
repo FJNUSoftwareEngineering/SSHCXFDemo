@@ -1,5 +1,7 @@
 package com.fjnu.dao;
 
+import java.io.IOException;
+
 import com.fjnu.domain.User;
 
 public interface UserDao {

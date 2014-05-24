@@ -1,5 +1,7 @@
 package com.fjnu.service.impl;
 
+import java.io.IOException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +19,11 @@ public class UserServiceImpl implements UserService {
 			return false;
 		else
 			return u.getPassword().equals(user.getPassword())?true:false;
+	}
+	@Override
+	public boolean save(User user) {
+		userDao.saveUser(user);
+		return true;
 	}
 
 }

@@ -2,6 +2,8 @@ package com.fjnu.dao.impl;
 
 
 
+import java.io.IOException;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,10 +16,12 @@ public class UserDaoImpl implements UserDao{
 	@Autowired
 	private SessionFactory sessionFactory;
 	@Override
-	public void saveUser(User user) {
+	public void saveUser(User user){
 		Session session = sessionFactory.openSession();
 		session.save(user);
+		session.flush();
 		session.close();
+		
 	}
 
 	@Override
