@@ -25,12 +25,7 @@
 		destroy-method="close">
 		<property name="driverClass" value="com.mysql.jdbc.Driver" />
 		 
-		<!-- 根据SAE申请的应用说明设置,数据库名为app_加上应用名称 -->
-	<!--	<property name="jdbcUrl" value="jdbc:mysql://w.rdc.sae.sina.com.cn:3307/app_studydemo" />-->
-		<!-- 用户名为Access Key -->
-	<!--	<property name="user" value="50kllnon12" />-->
-		<!-- 密码为Secret Key -->
-	<!--	<property name="password" value="3mikwmwh2lk5x4zhmmjxx3kx31mlhwmw25hijx3l" />-->
+
 		
 		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/demo" />
 		<property name="user" value="root" />
